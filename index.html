@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-align: center;
+    }
+
+    body {
+      background: #1edec1;
+    }
+
+    h1 {
+      margin: 2;
+    }
+
+    h4 {
+      margin: 10;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #1edec1;
+      padding: 20%;
+      height: 100%;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 3px;
+    }
+
+    .letra {
+      padding: 4px;
+      border-radius: 3px;
+      width: 15px;
+      background: #1edec1;
+    }
+
+
+    button {
+      padding: 10px;
+      background: #4076f3;
+      outline: none;
+      border-radius: 20px;
+      border: 1px solid #4076f3;
+      color: rgb(255, 255, 255);
+    }
+
+    button:hover {
+      background: #123a99;
+    }
+
+    button:active {
+      background-color: #470f8b;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+      border: 1px solid #ba50f3;
+    }
+
+    #response {
+      margin-top: 50px;
+      font-size: 24px;
+      text-align: center;
+      background-color: rgb(255, 255, 254);
+    }
+
+    #alertaRoja {
+      margin-top: 50px;
+      font-size: 20px;
+      text-align: ce0nter;
+      background-color: #f36740;
+      font-style: italic;
+      border-radius: 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    .slider {
+      position: relative;
+      top: 0px;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 16%;
+      overflow: hidden;
+      background: #1edec1;
+    }
+
+    .divLetras {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="slider" id="pantalla">
+    <div class="container" id="pag1">
+      <h1>¡Hola!</h1>
+      <h4>Soy Celia y estoy haciendo mi primer formulario con JS</h4>
+      <p>Antes de nada dime tu nombre así puedo dirigirme a ti</p>
+      <br />
+      <input type="text" placeholder="Escribe tu nombre aquí" id="userName">
+      <br />
+      <button id="buttonSaludar">Saludar</button>
+      <br />
+      <p>Haz scroll para continuar</p>
+    </div>
+    <div class="container">
+      <h3 id="saludoPersonal">
+
+      </h3>
+      <br />
+    </div>
+    <div class="container" id="pag2">
+      <h1>¿Sabes escribir bien un email?</h1>
+      <h3>pasa una direccion de email por nuesto validador ...</h3>
+      <br />
+      <input type="email" placeholder="email" id="emailField">
+      <br />
+      <button id="buttonValidar">Validar</button>
+      <br />
+      <p>Puedes validar tantos emails como quieras</p>
+      <br />
+    </div>
+    <div class="container" id="pag3">
+      <h1>¿Quieres saber si aún eres joven?</h1>
+      <h4>Atención este formulario puede herir tus sentimientos</h4>
+      <br />
+      <input type="number" placeholder="Pon tu edad aquí" id="edad">
+      <br />
+      <button id="button">me arriesgo</button>
+      <div id="response"></div>
+    </div>
+    <div class="container" id="pag4"">
+            <h1>Ahora hablame de ti...</h1>
+            <h4></h4>
+            <br />
+            <input type=" text" placeholder="Soy juanita y me gusta viajar..." id="nombre">
+      <br />
+      <button id="buttonenviar">enviar</button>
+      <br />
+      <div id="alertaRoja"></div>
+    </div>
+    <div class="container" id="pag5">
+      <h1>¿Sabes cuál es el ser vivo más fuerte del planeta?</h1>
+      <h4></h4>
+      <br />
+      <div class="divLetras">
+        <input class="letra" type="text" id="letraA">
+        <input class="letra" type="text" id="letraG">
+        <input class="letra" type="text" id="letraI">
+        <input class="letra" type="text" id="letraM">
+        <input class="letra" type="text" id="letraR">
+        <input class="letra" type="text" id="letraO">
+        <input class="letra" type="text" id="letraH">
+      </div>
+    </div>
+    <div class="container" id="pag6">
+      <h1 id="despedida"></h1>
+      <h4>Espero verte en mi próxima aventura con JS</h4>
+    </div>
+  </section>
+  <script src="main.js">
+
+  </script>
+</body>
+
+</html>
